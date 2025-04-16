@@ -6,9 +6,11 @@ import sklearn.ensemble
 import sklearn.linear_model
 import sklearn.model_selection
 import sklearn.preprocessing
-from xgboost import XGBClassifier  # Added XGBoost
+# from xgboost import XGBClassifier  # Added XGBoost
 
-class ReusableClassifier():
+from entity_resolution import reusable_classifier
+
+class NameClassifier():
     def __init__(self, model_type: str):
         """Create a classifier, storing a model and metadata."""
         self.model_type = model_type
@@ -80,7 +82,8 @@ class ReusableClassifier():
         return sklearn.ensemble.RandomForestClassifier()
 
     def _create_xgboost(self):  
-        return XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+        # return XGBClassifier(use_label_encoder=False, eval_metric='logloss')
+        return None
 
         
 
