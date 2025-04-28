@@ -44,7 +44,10 @@ In real-world datasets, especially in healthcare, finance, and government system
 - Created an efficient mapping between doctor and patentee datasets
 
 ---
-
+## Final: Why Entity Resolution Matters
+- Accurate entity resolution ensures that systems connect the correct people, organizations, and records.
+- In sectors like healthcare, finance, and e-commerce, trustworthy linking of messy data is vital for analytics, decision-making, and operational success.
+---
 ## Technical Stack
 
 Check pyproject.toml for repository dependencies. 
